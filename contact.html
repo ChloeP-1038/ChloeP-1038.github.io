@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      background-color: #fdf6e3; /* Vintage parchment tone */
+      font-family: serif;
+    }
+
+    .form-container {
+      background-color: #8b5e5e; /* Faded burgundy */
+      padding: 20px;
+      margin: 40px auto;
+      width: 80%;
+      max-width: 600px;
+      border-radius: 10px;
+      color: #fff;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    textarea {
+      background-color: #ffffff; /* White comment box */
+      height: 100px;
+      resize: vertical;
+    }
+
+    input[type="submit"] {
+      margin-top: 20px;
+      background-color: #4b2e2e;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #3a2323;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="dragons.html">Dragon Guide</a></li>
+      <li><a href="contact.html">Feedback</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h1>Contact the Riders</h1>
+    <p>We'd love to hear your thoughts from the skies of Berk.</p>
+  </header>
+
+  <main>
+    <div class="form-container">
+      <form action="#" method="post">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" />
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" />
+
+        <label for="favorite-character">Which character is your favorite?</label>
+        <select id="favorite-character" name="favorite-character">
+          <option value="hiccup">Hiccup</option>
+          <option value="astrid">Astrid</option>
+          <option value="snotlout">Snotlout</option>
+          <option value="fishlegs">Fishlegs</option>
+          <option value="ruffnut">Ruffnut</option>
+          <option value="tuffnut">Tuffnut</option>
+        </select>
+
+        <label for="favorite-dragon">Which dragon is your favorite?</label>
+        <select id="favorite-dragon" name="favorite-dragon">
+          <option value="toothless">Toothless</option>
+          <option value="stormfly">Stormfly</option>
+          <option value="hookfang">Hookfang</option>
+          <option value="meatlug">Meatlug</option>
+          <option value="barfbelch">Barf & Belch</option>
+        </select>
+
+        <label for="custom-dragon">What dragon would you have?</label>
+        <input type="text" id="custom-dragon" name="custom-dragon" placeholder="Describe your dream dragon..." />
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" placeholder="Share your thoughts, ideas, or dragon theories..."></textarea>
+
+        <input type="submit" value="Send to Berk" />
+		<input type="reset" value="Clear Form" />
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>Return to <a href="index.html">Home</a> or explore the <a href="dragons.html">Dragon Guide</a>.</p>
+  </footer>
+
+</body>
+</html>
